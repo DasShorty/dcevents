@@ -1,4 +1,4 @@
-package de.dasshorty.pridebot.api.menu.string;
+package de.dasshorty.dcevents.api.menu.string;
 
 import net.dv8tion.jda.api.events.interaction.component.StringSelectInteractionEvent;
 

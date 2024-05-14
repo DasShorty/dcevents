@@ -1,4 +1,4 @@
-package de.dasshorty.pridebot.api.buttons;
+package de.dasshorty.dcevents.api.buttons;
 
 import net.dv8tion.jda.api.entities.channel.unions.MessageChannelUnion;
 import net.dv8tion.jda.api.interactions.components.ActionRow;

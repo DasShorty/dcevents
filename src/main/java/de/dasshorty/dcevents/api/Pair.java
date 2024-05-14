@@ -1,6 +1,4 @@
-package de.dasshorty.pridebot.api;
-
-import java.io.Serializable;
+package de.dasshorty.dcevents.api;
 
 public record Pair<K,V>(K key, V value) {
     @Override

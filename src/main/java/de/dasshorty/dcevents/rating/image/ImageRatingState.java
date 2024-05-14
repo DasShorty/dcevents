@@ -1,2 +1,10 @@
-package de.dasshorty.dcevents.rating.image;public enum ImageRatingState {
+package de.dasshorty.dcevents.rating.image;
+
+public enum ImageRatingState {
+
+    WAITING,
+    SUBMIT,
+    VOTING,
+    ENDED
+
 }

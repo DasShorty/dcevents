@@ -1,4 +1,4 @@
-package de.dasshorty.pridebot.api;
+package de.dasshorty.dcevents.api;
 
 import java.time.Duration;
 

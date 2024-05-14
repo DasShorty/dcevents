@@ -1,8 +1,8 @@
-package de.dasshorty.pridebot.api.commands;
+package de.dasshorty.dcevents.api.commands;
 
-import de.dasshorty.pridebot.api.commands.message.MessageCommand;
-import de.dasshorty.pridebot.api.commands.slash.SlashCommand;
-import de.dasshorty.pridebot.api.commands.user.UserCommand;
+import de.dasshorty.dcevents.api.commands.message.MessageCommand;
+import de.dasshorty.dcevents.api.commands.slash.SlashCommand;
+import de.dasshorty.dcevents.api.commands.user.UserCommand;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.events.interaction.command.MessageContextInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;

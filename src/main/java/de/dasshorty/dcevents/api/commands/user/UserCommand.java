@@ -1,4 +1,4 @@
-package de.dasshorty.pridebot.api.commands.user;
+package de.dasshorty.dcevents.api.commands.user;
 
 import net.dv8tion.jda.api.events.interaction.command.UserContextInteractionEvent;
 import net.dv8tion.jda.internal.interactions.CommandDataImpl;

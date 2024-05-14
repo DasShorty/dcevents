@@ -1,4 +1,4 @@
-package de.dasshorty.pridebot.api.modal;
+package de.dasshorty.dcevents.api.modal;
 
 import net.dv8tion.jda.api.events.interaction.ModalInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;

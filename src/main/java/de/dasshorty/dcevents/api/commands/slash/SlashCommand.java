@@ -1,4 +1,4 @@
-package de.dasshorty.pridebot.api.commands.slash;
+package de.dasshorty.dcevents.api.commands.slash;
 
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.internal.interactions.CommandDataImpl;

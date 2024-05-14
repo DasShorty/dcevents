@@ -1,7 +1,7 @@
-package de.dasshorty.pridebot.api.menu;
+package de.dasshorty.dcevents.api.menu;
 
-import de.dasshorty.pridebot.api.menu.entity.EntitySelectionMenu;
-import de.dasshorty.pridebot.api.menu.string.StringSelectionMenu;
+import de.dasshorty.dcevents.api.menu.entity.EntitySelectionMenu;
+import de.dasshorty.dcevents.api.menu.string.StringSelectionMenu;
 import net.dv8tion.jda.api.events.interaction.component.EntitySelectInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.component.StringSelectInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;

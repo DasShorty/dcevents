@@ -1,4 +1,4 @@
-package de.dasshorty.pridebot.api.buttons;
+package de.dasshorty.dcevents.api.buttons;
 
 import net.dv8tion.jda.api.events.interaction.component.ButtonInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
