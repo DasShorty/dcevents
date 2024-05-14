@@ -12,6 +12,7 @@ public class ImageRatingDto {
     private String serverId; // id from guild
     private String votingChannelId;
     private String submitChannelId;
+    private ImageRatingState state;
 
     private ImageRatingDto(String id) {
         this.id = id;
@@ -19,22 +20,6 @@ public class ImageRatingDto {
 
     public static ImageRatingDto createDto() {
         return new ImageRatingDto(new ObjectId().toHexString());
-    }
-
-    public void setServerId(String serverId) {
-        this.serverId = serverId;
-    }
-
-    public void setVotingChannelId(String votingChannelId) {
-        this.votingChannelId = votingChannelId;
-    }
-
-    public void setSubmitChannelId(String submitChannelId) {
-        this.submitChannelId = submitChannelId;
-    }
-
-    public void setState(ImageRatingState state) {
-        this.state = state;
     }
 
     public String getId() {
@@ -45,18 +30,32 @@ public class ImageRatingDto {
         return serverId;
     }
 
+    public void setServerId(String serverId) {
+        this.serverId = serverId;
+    }
+
     public String getVotingChannelId() {
         return votingChannelId;
+    }
+
+    public void setVotingChannelId(String votingChannelId) {
+        this.votingChannelId = votingChannelId;
     }
 
     public String getSubmitChannelId() {
         return submitChannelId;
     }
 
+    public void setSubmitChannelId(String submitChannelId) {
+        this.submitChannelId = submitChannelId;
+    }
+
     public ImageRatingState getState() {
         return state;
     }
 
-    private ImageRatingState state;
+    public void setState(ImageRatingState state) {
+        this.state = state;
+    }
 
 }

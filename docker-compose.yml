@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  bot:
+    build: .
+    networks:
+      - default
+    env_file:
+      - .env
+networks:
+  default:

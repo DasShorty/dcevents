@@ -2,6 +2,7 @@ plugins {
     java
     id("org.springframework.boot") version "3.2.5"
     id("io.spring.dependency-management") version "1.1.4"
+    id("com.github.johnrengelman.shadow") version ("7.1.2")
 }
 
 group = "de.dasshorty"
@@ -19,7 +20,6 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
     implementation("org.springframework.boot:spring-boot-starter-web")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
-
 
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("net.dv8tion:JDA:5.0.0-beta.23")

@@ -21,7 +21,19 @@ public class ButtonHandler extends ListenerAdapter {
     @Override
     public void onButtonInteraction(@NotNull ButtonInteractionEvent event) {
         buttons.forEach(button -> {
-            if (button.id().equals(event.getButton().getId())) button.onExecute(event);
+            String id = event.getButton().getId();
+
+            if (id == null) {
+                return;
+            }
+
+            if (id.contains("_")) {
+                id = id.split("_")[0];
+            }
+
+            if (button.id().equals(id)) {
+                button.onExecute(event);
+            }
         });
 
     }
