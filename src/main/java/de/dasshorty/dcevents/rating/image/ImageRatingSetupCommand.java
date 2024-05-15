@@ -181,7 +181,7 @@ public class ImageRatingSetupCommand implements SlashCommand {
                         .addEmbeds(
                                 new EmbedBuilder()
                                         .setTitle("Image Rating")
-                                        .setDescription("Das Bild von <@" + submitDto.getId() + "> **hat** gewonnen!")
+                                        .setDescription("Das Bild von <@" + submitDto.getId() + "> **hat** gewonnen mit " + submitDto.getRating() + "Punkten!")
                                         .setImage(this.generateLink(submitDto.getImageId()))
                                         .setColor(Color.GREEN)
                                         .setTimestamp(Instant.now())
