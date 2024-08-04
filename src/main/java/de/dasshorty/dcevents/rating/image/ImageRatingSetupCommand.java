@@ -100,7 +100,7 @@ public class ImageRatingSetupCommand implements SlashCommand {
 
                 imageRepo.save(dto);
 
-                event.getHook().editOriginal("Image Rating (**" + dto.getId() + "**) has been created.").queue();
+                event.getHook().editOriginal("Bildbewertung (**" + dto.getId() + "**) wurde erstellt.").queue();
 
             }
             case "start" -> {
@@ -110,19 +110,19 @@ public class ImageRatingSetupCommand implements SlashCommand {
                 Role role = event.getOption("mention", OptionMapping::getAsRole);
 
                 if (id == null) {
-                    event.getHook().editOriginal("The provided id can't be serialized!").queue();
+                    event.getHook().editOriginal("Die angegebene ID konnte nicht gefunden werden").queue();
                     return;
                 }
 
                 if (role == null) {
-                    event.getHook().editOriginal("The provided role can't be serialized!").queue();
+                    event.getHook().editOriginal("Die angegebene Rolle konnte nicht gefunden werden").queue();
                     return;
                 }
 
                 Optional<ImageRatingDto> optional = this.imageRepo.findById(id);
 
                 if (optional.isEmpty()) {
-                    event.getHook().editOriginal("Image Rating can't be found by id: " + id).queue();
+                    event.getHook().editOriginal("Es wurde kein Rating mit der ID " + id + " gefunden!").queue();
                     return;
                 }
 
@@ -143,8 +143,8 @@ public class ImageRatingSetupCommand implements SlashCommand {
                         .addEmbeds(
                                 new EmbedBuilder()
                                         .setTitle("Image Rating")
-                                        .setDescription("Send your images into this channel and enter the competition!")
-                                        .addField("How can i win?", "At first you submit your image here then the community can vote your image and the image with the highest voting gets the price.", false)
+                                        .setDescription("Schicke dein Bild in diesen Channel, um am Wettbewerb teilzunehmen!")
+                                        .addField("Wie läuft es ab?", "Als erstes schickst du dein Bild in diesen Channel rein, danach wird vom Team, eine Bewertungsphase eröffnet, wo alle Mitglieder die Bilder bewerten können.", false)
                                         .setColor(Color.GREEN)
                                         .setFooter("Event presented by DasShorty")
                                         .build()

@@ -22,7 +22,7 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 
     implementation("com.google.code.gson:gson:2.10.1")
-    implementation("net.dv8tion:JDA:5.0.0-beta.23")
+    implementation("net.dv8tion:JDA:5.0.2")
 }
 
 tasks.withType<Test> {

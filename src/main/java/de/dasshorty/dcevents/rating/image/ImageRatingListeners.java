@@ -86,6 +86,9 @@ public class ImageRatingListeners extends ListenerAdapter {
                 this.submitRepository.save(dto);
 
                 this.removeMessage(event.getMessage());
+                member.getUser().openPrivateChannel().queue(privateChannel -> {
+                    privateChannel.sendMessage("Dein Bild wurde eingeschickt!").queue();
+                });
 
             } catch (IOException e) {
                 throw new RuntimeException(e);
